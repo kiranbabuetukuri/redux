@@ -53,7 +53,7 @@ case FETCH_USER_REQUEST:
 
 }
 const store=createStore(reducer,applyMiddleware(thunk))
-const fetchUsers=()=>{
+const fetchUsers=( )=>{
 return function (dispatch){
     console.log(445)
     dispatch(fetchUserRequest)
